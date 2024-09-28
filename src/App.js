@@ -5,7 +5,7 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <img
-          src={"./SonjaCodes-logo.png"}
+          src="SonjaCodes-logo.png"
           className="SonjaCodes-logo"
           alt="SonjaCodes-logo"
         />
