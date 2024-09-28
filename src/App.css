@@ -1,9 +1,13 @@
 .App {
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .App-header {
+  margin: 50px auto;
 }
 
+.App .SonjaCodesLogo {
+  height: 20vmin;
+  pointer-events: none;
+}
