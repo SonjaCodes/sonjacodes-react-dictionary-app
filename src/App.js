@@ -1,3 +1,4 @@
+import SonjaCodesLogo from "./SonjaCodesLogo.png";
 import "./App.css";
 
 export default function App() {
@@ -5,8 +6,8 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <img
-          src="SonjaCodes-logo.png"
-          className="SonjaCodes-logo"
+          src={SonjaCodesLogo}
+          className="SonjaCodesLogo"
           alt="SonjaCodes-logo"
         />
         <h1>SonjaCodes React Dictionary App</h1>
