@@ -1,4 +1,6 @@
 import { Container } from "react-bootstrap";
+import Dictionary from "./Dictionary.js";
+import Footer from "./Footer.js";
 import "./App.css";
 
 export default function App() {
@@ -13,33 +15,15 @@ export default function App() {
               alt="SonjaCodesLogo"
             />
           </header>
-          <body>
-            <h1>SonjaCodes React Dictionary App</h1>
-          </body>
+          <main>
+            <h1>React Dictionary App</h1>
+            <p>
+              <Dictionary />
+            </p>
+          </main>
         </Container>
-        <footer className="Footer">
-          This project was coded with love by{" "}
-          <a
-            href="https://github.com/SonjaCodes"
-            target="_blank"
-            rel="noreferrer">
-            Sonja Kolmer
-          </a>
-          . It is open-sourced on{" "}
-          <a
-            href="https://github.com/SonjaCodes/sonjacodes-react-dictionary-app"
-            target="_blank"
-            rel="noreferrer">
-            Github
-          </a>{" "}
-          and hosted on{" "}
-          <a
-            href="https://app.netlify.com/sites/sonjacodes-react-dictionary-app/overview"
-            target="_blank"
-            rel="noreferrer">
-            Netlify
-          </a>
-          .
+        <footer>
+          <Footer />
         </footer>
       </div>
     </div>

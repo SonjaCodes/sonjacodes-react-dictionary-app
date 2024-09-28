@@ -1,5 +1,9 @@
+:root {
+  --sonjacodes-brand-color: #F53B9B;
+  --sonjacodes-brand-color-secondary: #c1c1c1;
+}
+
 .App {
-  margin: 20px auto;
   text-align: center;
 }
 
@@ -10,4 +14,13 @@
 .App .SonjaCodesLogo {
   height: 20vmin;
   pointer-events: none;
+}
+
+.App .App-Container {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  min-width: 650px;
+  max-width: 960px;
+  padding: 20px;
 }

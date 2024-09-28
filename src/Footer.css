@@ -1,0 +1,18 @@
+.Footer {
+  color: #fff;
+  font-size: 12px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.Footer a {
+  color: var(--sonjacodes-brand-color)
+}
+
+.Footer a:hover {
+  background-color: #fff;
+  border-radius: 2px;
+  font-weight: 600;
+  opacity: 1;
+  text-decoration: none;
+}
