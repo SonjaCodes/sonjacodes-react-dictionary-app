@@ -12,7 +12,9 @@
 }
 
 .App .SonjaCodesLogo {
+  display: block;
   height: 20vmin;
+  margin: 0 auto;
   pointer-events: none;
 }
 
