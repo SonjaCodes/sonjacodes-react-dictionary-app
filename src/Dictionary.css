@@ -40,3 +40,9 @@
     background-position: 200vw;
   }
 }
+
+.Dictionary .Results {
+  margin-top: 20px;
+  padding: 0 5px;
+  text-align: left;
+}
