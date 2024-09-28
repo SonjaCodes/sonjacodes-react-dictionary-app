@@ -1,27 +1,16 @@
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img
-          src="SonjaCodes-logo.png"
+          src={"./SonjaCodes-logo.png"}
           className="SonjaCodes-logo"
           alt="SonjaCodes-logo"
         />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
+        <h1>SonjaCodes React Dictionary App</h1>
       </header>
     </div>
   );
 }
-
-export default App;
