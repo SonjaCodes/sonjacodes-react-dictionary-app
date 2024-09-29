@@ -4,7 +4,7 @@ import "./Results.css";
 
 export default function Results(props) {
   if (typeof props.results === "string") {
-    return <div>{props.results}</div>;
+    return <div className="text-center">{props.results}</div>;
   }
   return (
     <div className="Results">
@@ -13,7 +13,7 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
         </div>
         <div className="p-2 phonetic">
-          <h4>{props.results.phonetic}</h4>
+          <h6>{props.results.phonetic}</h6>
         </div>
         <div className="p-2 meaning">
           {props.results.meanings?.map(function (meaning, index) {

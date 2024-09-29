@@ -1,3 +1,8 @@
+.Results .phonetic {
+  color: var(--sonjacodes-brand-color);
+  font-size: 14px;
+}
+
 .Results .Stack {
   row-gap: 0 !important;
 }
