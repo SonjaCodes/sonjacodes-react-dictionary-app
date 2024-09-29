@@ -7,12 +7,21 @@ export default function Results(props) {
   }
   return (
     <div className="Results">
-      <h2>{props.results.word}</h2>
-      <h3>{props.results.phonetic}</h3>
       <Stack className="Stack" direction="vertical" gap={3}>
-        <div className="p-2">{props.results.meaning}</div>
-        <div className="p-2">{props.results.meaning}</div>
-        <div className="p-2">{props.results.meaning}</div>
+        <div className="p-2 word">
+          <h2>{props.results.word}</h2>
+        </div>
+        <div className="p-2 phonetic">
+          <h4>{props.results.phonetic}</h4>
+        </div>
+        <div className="p-2 meaning">
+          {" "}
+          <div>
+            {props.results.partofspeech}
+            <br />
+            {props.results.definition}
+          </div>
+        </div>
       </Stack>
     </div>
   );
