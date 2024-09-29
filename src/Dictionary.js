@@ -8,13 +8,11 @@ export default function Dictionary() {
   const [results, setResults] = useState({});
 
   function handleResponse(response) {
-    console.log(response.data);
     if (response.data.word) {
       setResults({
         word: response.data.word,
         phonetic: response.data.phonetic,
-        partofspeech: response.data.meanings[0].partOfSpeech,
-        definition: response.data.meanings[0].definition,
+        meanings: response.data.meanings,
       });
     } else {
       setResults("Ooops, something went wrong...please try again!");

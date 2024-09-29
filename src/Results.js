@@ -1,4 +1,5 @@
 import Stack from "react-bootstrap/Stack";
+import Meaning from "./Meaning";
 import "./Results.css";
 
 export default function Results(props) {
@@ -15,12 +16,13 @@ export default function Results(props) {
           <h4>{props.results.phonetic}</h4>
         </div>
         <div className="p-2 meaning">
-          {" "}
-          <div>
-            {props.results.partofspeech}
-            <br />
-            {props.results.definition}
-          </div>
+          {props.results.meanings?.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Meaning meaning={meaning} />
+              </div>
+            );
+          })}
         </div>
       </Stack>
     </div>
