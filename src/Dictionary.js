@@ -15,7 +15,7 @@ export default function Dictionary() {
         meanings: response.data.meanings,
       });
     } else {
-      setResults("Ooops, something went wrong...please try again!");
+      setResults("Ooops, sadly I don't know this word...please try again! Here is a cookie for your efforts: 🍪");
     }
   }
 

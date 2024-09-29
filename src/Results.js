@@ -20,6 +20,7 @@ export default function Results(props) {
             return (
               <div key={index}>
                 <Meaning meaning={meaning} />
+                {index < props.results.meanings.length - 1 && <hr />}
               </div>
             );
           })}

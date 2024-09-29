@@ -1,9 +1,12 @@
 export default function Meaning(props) {
   return (
     <div className="Meaning">
-      <p className="partOfSpeech fst-italic">{props.meaning.partOfSpeech}</p>
-      <p>{props.meaning.definition}</p>
-      <p>{props.meaning.synonyms?.join(", ")}</p>
+      <p>
+        <strong>{props.meaning.partOfSpeech}</strong>
+      </p>
+      <p>Definition: {props.meaning.definition}</p>
+      {props.meaning.example && <p>Example: {props.meaning.example}</p>}
+      {props.meaning.synonyms && <p>Synonyms: {props.meaning.synonyms?.join(", ")}</p>}
     </div>
   );
 }
