@@ -1,4 +1,5 @@
 import Stack from "react-bootstrap/Stack";
+import eSpeakNG from "espeak-ng";
 import Meaning from "./Meaning";
 import "./Results.css";
 
@@ -13,7 +14,14 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
         </div>
         <div className="p-2 phonetic">
-          {props.results.phonetic && <h6>/{props.results.phonetic}/</h6>}
+          {props.results.phonetic && (
+            <div>
+              <h6>/{props.results.phonetic}/</h6>
+              <button onClick={() => speakPhonemes(props.results.phonetic)}>
+                Listen
+              </button>
+            </div>
+          )}
         </div>
         <div className="p-2 meaning">
           {props.results.meanings?.map(function (meaning, index) {
@@ -28,4 +36,17 @@ export default function Results(props) {
       </Stack>
     </div>
   );
+}
+
+function speakPhonemes(phonemes) {
+  const espeakNG = new eSpeakNG();
+  espeakNG.speak(phonemes, (err, audio) => {
+    if (err) {
+      console.error(err);
+    } else {
+      const audioElement = new Audio();
+      audioElement.src = audio;
+      audioElement.play();
+    }
+  });
 }
