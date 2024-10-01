@@ -4,10 +4,18 @@ export default function Meaning(props) {
       <h4>
         <i>{props.meaning.partOfSpeech}</i>
       </h4>
-      <p>Definition: {props.meaning.definition}</p>
-      {props.meaning.example && <p>Example: "{props.meaning.example}"</p>}
+      <p>
+        <u>Definition</u>: {props.meaning.definition}
+      </p>
+      {props.meaning.example && (
+        <p>
+          <u>Example</u>: "{props.meaning.example}"
+        </p>
+      )}
       {props.meaning.synonyms && (
-        <p>Synonyms: {props.meaning.synonyms?.join(", ")}</p>
+        <p>
+          <u>Synonyms</u>: {props.meaning.synonyms?.join(", ")}
+        </p>
       )}
     </div>
   );
