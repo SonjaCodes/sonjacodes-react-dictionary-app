@@ -13,14 +13,11 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
         </div>
         <div className="p-2 phonetic">
-          {props.results.phonetic && (
+          {props.results.phonetic && 
             <div>
               <h6>/{props.results.phonetic}/</h6>
-              <button onClick={() => speakPhonemes(props.results.phonetic)}>
-                Listen
-              </button>
             </div>
-          )}
+          }
         </div>
         <div className="p-2 meaning">
           {props.results.meanings?.map(function (meaning, index) {
@@ -37,21 +34,3 @@ export default function Results(props) {
   );
 }
 
-function speakPhonemes(phonemes) {
-  const eSpeakNG = require("espeak-ng");
-  const espeakNG = new eSpeakNG({
-    amplitude: 100,
-    pitch: 50,
-    speed: 150,
-    wordgap: 10,
-  });
-  espeakNG.speak(phonemes, (err, audio) => {
-    if (err) {
-      console.error(err);
-    } else {
-      const audioElement = new Audio();
-      audioElement.src = audio;
-      audioElement.play();
-    }
-  });
-}
