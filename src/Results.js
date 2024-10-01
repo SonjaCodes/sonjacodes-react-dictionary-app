@@ -2,8 +2,6 @@ import Stack from "react-bootstrap/Stack";
 import Meaning from "./Meaning";
 import "./Results.css";
 
-const eSpeakNG = require("espeak-ng").eSpeakNG;
-
 export default function Results(props) {
   if (typeof props.results === "string") {
     return <div className="text-center">{props.results}</div>;
@@ -40,7 +38,13 @@ export default function Results(props) {
 }
 
 function speakPhonemes(phonemes) {
-  const espeakNG = new eSpeakNG();
+  const eSpeakNG = require("espeak-ng");
+  const espeakNG = new eSpeakNG({
+    amplitude: 100,
+    pitch: 50,
+    speed: 150,
+    wordgap: 10,
+  });
   espeakNG.speak(phonemes, (err, audio) => {
     if (err) {
       console.error(err);
