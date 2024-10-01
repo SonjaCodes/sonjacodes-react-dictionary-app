@@ -16,7 +16,7 @@ export default function App() {
             />
           </header>
           <main>
-            <h1>React Dictionary App</h1>
+            <h1>Dictionary App</h1>
 
             <Dictionary />
           </main>
