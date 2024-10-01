@@ -1,7 +1,8 @@
 import Stack from "react-bootstrap/Stack";
-import eSpeakNG from "espeak-ng";
 import Meaning from "./Meaning";
 import "./Results.css";
+
+const eSpeakNG = require("espeak-ng").eSpeakNG;
 
 export default function Results(props) {
   if (typeof props.results === "string") {
