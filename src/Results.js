@@ -13,7 +13,7 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
         </div>
         <div className="p-2 phonetic">
-          <h6>/{props.results.phonetic}/</h6>
+          {props.results.phonetic && <h6>/{props.results.phonetic}/</h6>}
         </div>
         <div className="p-2 meaning">
           {props.results.meanings?.map(function (meaning, index) {
