@@ -6,3 +6,17 @@
 .Results .Stack {
   row-gap: 0 !important;
 }
+
+.Results .Stack hr {
+  margin: 2rem 0;
+}
+
+.Results .Meaning .example {
+  font-size: 14px;
+}
+
+.Results .Meaning .synonyms {
+  color: var(--sonjacodes-brand-color-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
