@@ -12,14 +12,14 @@ export default function Footer() {
       </a>
       . It is open-sourced on{" "}
       <a
-        href="https://github.com/SonjaCodes/sonjacodes-react-weather-app"
+        href="https://github.com/SonjaCodes/sonjacodes-react-dictionary-app"
         target="_blank"
         rel="noreferrer">
         Github
       </a>{" "}
       and hosted on{" "}
       <a
-        href="https://app.netlify.com/sites/sonjacodes-react-weather-app/overview"
+        href="https://app.netlify.com/sites/sonjacodes-react-dictionary-app/overview"
         target="_blank"
         rel="noreferrer">
         Netlify
