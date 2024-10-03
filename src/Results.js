@@ -1,4 +1,5 @@
 import Stack from "react-bootstrap/Stack";
+import Speech from "react-text-to-speech";
 import Meaning from "./Meaning";
 import "./Results.css";
 
@@ -13,11 +14,12 @@ export default function Results(props) {
           <h2>{props.results.word}</h2>
         </div>
         <div className="p-2 phonetic">
-          {props.results.phonetic && 
+          {props.results.phonetic && (
             <div>
               <h6>/{props.results.phonetic}/</h6>
+              <Speech text={props.results.word} />
             </div>
-          }
+          )}
         </div>
         <div className="p-2 meaning">
           {props.results.meanings?.map(function (meaning, index) {
@@ -33,4 +35,3 @@ export default function Results(props) {
     </div>
   );
 }
-
