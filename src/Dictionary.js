@@ -45,7 +45,7 @@ export default function Dictionary() {
             autoFocus
             onChange={handleKeywordChange}
           />
-          <input className="SearchButton" type="submit" value="Search" />
+          <input className="SearchButton" type="submit" value="🔍" />
         </form>
       </section>
       <section className="Results">
