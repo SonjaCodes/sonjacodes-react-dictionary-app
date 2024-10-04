@@ -1,5 +1,6 @@
 .example-text {
   font-size: 14px;
+  font-weight: 500;
   left: 50%;
   position: absolute;
   text-align: center;
@@ -14,6 +15,7 @@
 }
 
 .example-box.show {
+  cursor: help;
   display: block;
 }
 

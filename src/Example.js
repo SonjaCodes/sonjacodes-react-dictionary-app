@@ -11,12 +11,12 @@ export default function Example(props) {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "white",
+          backgroundColor: "var(--sonjacodes-brand-color-secondary)",
           border: "1px solid #ddd",
           zIndex: 1,
         }}>
         <div className="example-text">
-          <i>No example found</i>
+          🙅🏼‍♀️ <i>I am sorry, there is no example available...</i>
         </div>
       </div>
     );
@@ -31,7 +31,7 @@ export default function Example(props) {
         left: 0,
         width: "100%",
         height: "100%",
-        backgroundColor: "white",
+        backgroundColor: "var(--sonjacodes-brand-color-secondary)",
         border: "1px solid #ddd",
         zIndex: 1,
       }}>
