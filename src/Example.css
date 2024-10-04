@@ -1,0 +1,22 @@
+.example-text {
+  font-size: 14px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example-box {
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.example-box.show {
+  display: block;
+}
+
+.example-box.hide {
+  display: none;
+}

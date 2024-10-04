@@ -1,0 +1,9 @@
+.Meaning {
+  position: relative;
+}
+
+.Meaning .synonyms {
+  color: var(--sonjacodes-brand-color-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
