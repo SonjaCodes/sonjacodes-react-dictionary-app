@@ -11,7 +11,7 @@ export default function Images(props) {
             return (
               <div key={index} className="col-md-4">
                 <a
-                  href={image.photographer_url}
+                  href={image.src.original}
                   target="_blank"
                   rel="noreferrer">
                   <img
