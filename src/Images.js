@@ -1,5 +1,6 @@
+import "./Images.css";
+
 export default function Images(props) {
-  console.log(props.images);
   if (!props.images) {
     return null;
   } else {
@@ -16,7 +17,7 @@ export default function Images(props) {
                   <img
                     src={image.src.landscape}
                     alt={image.photographer}
-                    className="img-fluid"
+                    className="img-fluid img-thumbnail image"
                   />
                 </a>
               </div>

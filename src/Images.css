@@ -1,0 +1,16 @@
+.Images .row {
+  background-color: var(--sonjacodes-brand-color-secondary);
+  border-color: var(--sonjacodes-brand-color);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 18px 10px;
+}
+
+.Images .image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  max-width: 100%;
+  margin: 5px 0;
+}

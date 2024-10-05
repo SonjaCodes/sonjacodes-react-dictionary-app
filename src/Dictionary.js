@@ -55,6 +55,7 @@ export default function Dictionary() {
             type="search"
             placeholder="Search for a word..."
             className="SearchBar"
+            id="searchBar"
             required
             autoFocus
             onChange={handleKeywordChange}
@@ -64,6 +65,8 @@ export default function Dictionary() {
       </section>
       <section className="Results">
         <Results results={results} />
+      </section>
+      <section className="Images">
         <Images images={images} />
       </section>
     </div>
