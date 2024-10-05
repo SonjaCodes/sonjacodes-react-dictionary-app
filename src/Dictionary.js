@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useState } from "react";
+import Images from "./Images";
 import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState({});
+  const [images, setImages] = useState(null);
 
   function handleResponse(response) {
     if (response.data.word) {
@@ -15,8 +17,14 @@ export default function Dictionary() {
         meanings: response.data.meanings,
       });
     } else {
-      setResults("Ooops, sadly I don't know this word...please try again! Here is a cookie for your efforts: 🍪");
+      setResults(
+        "Ooops, sadly I don't know this word...please try again! Here is a cookie for your efforts: 🍪"
+      );
     }
+  }
+
+  function handlePexelsResponse(response) {
+    setImages(response.data.photos);
   }
 
   function handleKeywordChange(event) {
@@ -30,6 +38,12 @@ export default function Dictionary() {
     const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
 
     axios.get(apiUrl).then(handleResponse);
+
+    const pexelsApiKey =
+      "SB8dXe5MAOI25g0Ch43zrzyN4cX6iFA1wmxFAOI1HwtD0EkbY3EKOCtY";
+    const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    const headers = { Authorization: pexelsApiKey };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
   return (
@@ -50,6 +64,7 @@ export default function Dictionary() {
       </section>
       <section className="Results">
         <Results results={results} />
+        <Images images={images} />
       </section>
     </div>
   );
