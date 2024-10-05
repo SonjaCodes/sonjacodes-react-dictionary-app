@@ -1,6 +1,7 @@
 .cookie-consent-banner {
   position: fixed;
   bottom: 0;
+  font-size: 10px;
   left: 0;
   right: 0;
   background-color: #333;
@@ -10,9 +11,10 @@
 }
 
 .cookie-consent-banner button {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--sonjacodes-brand-color);
+  color: #fff;
   border: none;
+  border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
 }
