@@ -14,3 +14,9 @@
   max-width: 100%;
   margin: 5px 0;
 }
+
+.Images .image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}

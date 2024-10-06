@@ -21,8 +21,9 @@ const CookieConsent = () => {
   return (
     <div className="cookie-consent-banner">
       <p>
-        This website uses cookies to improve your experience. By continuing to
-        use this website, you agree to our use of cookies.
+        Life is better with cookies. This website uses cookies to improve your
+        experience. By continuing to use this website, you agree to our use of
+        cookies.
         <br />
         <button onClick={handleConsent}>Agree</button>
       </p>

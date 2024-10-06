@@ -7,6 +7,7 @@ export default function Meaning(props) {
 
   const handleMouseOver = () => {
     setShowExample(true);
+    setTimeout(() => setShowExample(false), 3000);
   };
 
   const handleMouseOut = () => {
